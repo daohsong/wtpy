@@ -183,7 +183,7 @@ class WtCacheMonExchg(WtCacheMon):
         '''
 
         dtStr = curDT.strftime('%Y%m%d')
-        content = httpGet("http://www.shfe.com.cn/data/dailydata/kx/kx%s.dat" % (dtStr))
+        content = httpGet("http://tsite.shfe.com.cn/data/dailydata/kx/kx%s.dat" % (dtStr))
         if len(content) == 0:
             return None
         
